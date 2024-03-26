@@ -62,8 +62,9 @@ header .nav-link :hover {
 .jumbotron h1 {
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  color: rgb(6, 6, 122);
+  color: rgb(6, 6, 122) !;
   font-weight: bold;
+  vertical-align: bottom !important;
 }
 .jumbotron p {
   font-family: "Roboto", sans-serif;
