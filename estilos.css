@@ -41,12 +41,12 @@ header .nav-link {
 header .nav-link :hover {
   color: black !important;
 }
-header .nav-link {
+.nav-link{
   color: white !important;
   text-shadow: 0 0 5px;
   font-size: 20px;
 }
-header .nav-link :hover {
+.nav-link:hover{
   color: black !important;
 }
 
@@ -86,7 +86,7 @@ h2 {
 }
 
 .nleft {
-  background-image: url(./multimedia/chipa3.jpg);
+  background-image: url(./multimedia/noschipa.jpg);
   height: 350px;
   background-position: center;
   background-size: cover;
@@ -107,7 +107,7 @@ h2 {
   border: solid black 5px;
   height: 300px;
   text-align: center;
-  background-image: url(./multimedia/chipa1.jpg);
+  background-image: url(./multimedia/chipa3.jpg);
   background-position: center;
   background-size: cover;
   margin-bottom: 0px;

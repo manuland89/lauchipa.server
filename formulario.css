@@ -99,7 +99,7 @@ h2 {
     text-transform: capitalize;
         /* text-decoration: underline color(yellow); */
     text-shadow: 0.0.6;
-    color:black !important;
+    color:rgba(2, 5, 54, 0.952) !important;
     text-shadow: 0 0 6px !important;
 }
 
