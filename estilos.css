@@ -344,47 +344,385 @@ footer a {
   }
 }
 /* productos */
-.d-item {
-  height: 350px !important;
-  /* background-color: rgba(44, 42, 156, 0.432); */
-  background-color: rgba(0, 0, 0, 0.8823529412);
-  /* justify-content: center !important; */
-  padding-left: 450px;
-  /* justify-content: center;  */
-  /* text-align: center;  */
+/* postres */
+.ggaleria {
+  /* height: auto; */
+  background-color: rgba(44, 42, 156, 0.432);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  padding: 20px;
+  grid-gap: 20px;
 }
 
-.d-img {
-  width: 50% !important;
+.item {
+  border: 5px solid #000;
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+}
+.gitem1{
+  background-image: url(./multimedia/postre1.jpg);
   background-position: center;
   background-size: cover;
-  height: 400px !important;
-  object-position: center;
-  /* object-fit: contain; */
-  align-items: center;
-  justify-content: center !important;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.gitem2{
+  background-image: url(./multimedia/postre11.jpg);
+background-position:center;
+background-size: cover;
+grid-column: 2/3;
+grid-row: 1/2;
+}
+.gitem3{
+  background-image: url(./multimedia/postre3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.gitem4{
+  background-image: url(./multimedia/postre4.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.gitem5{
+  background-image: url(./multimedia/postre5.jpg);
+  background-position: top;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.gitem6{
+  background-image: url(./multimedia/postre6.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.gitem7{
+  background-image: url(./multimedia/postre7.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.gitem8{
+  background-image: url(./multimedia/postre8.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.gitem9{
+  background-image: url(./multimedia/postre9.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  .ggaleria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 200px);
+  }
+  .gitem1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .gitem2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .gitem3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .gitem4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .gitem5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .gitem6{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.gitem7{
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+.gitem8{
+  grid-column: 1/2;
+  grid-row: 8/9;
+  }
+  .gitem9{
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+}
+/* otros */
+
+.ggoaleria {
+  /* height: auto; */
+  background-color: rgba(44, 42, 156, 0.432);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.goitem1{
+  background-image: url(./multimedia/torta1.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.goitem2{
+  background-image: url(./multimedia/torta1\ \(2\).jpg);
+background-position:center;
+background-size: cover;
+grid-column: 2/3;
+grid-row: 1/2;
+}
+.goitem3{
+  background-image: url(./multimedia/torta3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.goitem4{
+  background-image: url(./multimedia/torta4.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.goitem5{
+  background-image: url(./multimedia/torta5.jpg);
+  background-position: top;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.goitem6{
+  background-image: url(./multimedia/torta7.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.goitem10{
+  background-image: url(./multimedia/huevo1.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.goitem11{
+  background-image: url(./multimedia/huevo2.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.goitem12{
+  background-image: url(./multimedia/huevo3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.goitem13{
+  background-image: url(./multimedia/huevo5.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+.goitem14{
+  background-image: url(./multimedia/huevo4.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 2/4;
+  grid-row: 5/6;
 }
 
 @media only screen and (max-width: 480px) {
-  .d-item {
-    padding-left: 130px !important;
-    /* padding-right: 50px !important; */
-    padding-top: 30px;
+  .ggoaleria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 200px);
   }
-  .d-img {
-    height: 250px !important;
-    width: 100%;
+  .goitem1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
+  .goitem2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .goitem3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .goitem4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .goitem5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .goitem6{
+    grid-column: 1/2;
+    grid-row: 6/7;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .d-item {
-    padding-left: 150px !important;
-  }
+.goitem10{
+  grid-column: 1/2;
+  grid-row: 7/8;
 }
-@media only screen and (min-width: 1024px) {
-  .d-item {
-    padding-left: 450px;
-  }
+.goitem11{
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+.goitem12{
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
+.goitem13{
+  grid-column: 1/2;
+  grid-row: 10/11;
+}
+.goitem14{
+  grid-column: 1/2;
+  grid-row: 11/12;
+}
 }
 
+/*chipa*/
+.ggcaleria {
+  /* height: auto; */
+  background-color: rgba(44, 42, 156, 0.432);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.gcitem1{ 
+  background-image: url(./multimedia/logo.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.gcitem2{
+  background-image: url(./multimedia/chipa\ 2.jpg);
+background-position:center;
+background-size: cover;
+grid-column: 2/3;
+grid-row: 1/3;
+}
+.gcitem3{
+  background-image: url(./multimedia/chipa3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.gcitem4{
+  background-image: url(./multimedia/chipa8.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.gcitem5{
+  background-image: url(./multimedia/chipa6.jpg);
+  background-position: top;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.gcitem6{
+  background-image: url(./multimedia/chipa7.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.gcitem7 {
+background-image: url(./multimedia/chipa11.jpg);
+background-position:top;
+background-size: cover;
+grid-row: 2/4;
+grid-column: 1/2;
+}
+.gcitem8{
+  background-image: url(./multimedia/chipa3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: ;
+}
+.gcitem9{
+  background-image: url(./multimedia/chipa9.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+@media only screen and (max-width: 480px) {
+  .ggcaleria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 200px);
+  }
+  .gcitem1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .gcitem2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .gcitem3 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .gcitem4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .gcitem5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .gcitem6{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.gcitem7{
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+.gcitem8{
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+.gcitem9{
+  grid-column: 1/2;
+  grid-row: 9/10;
+}
 /*# sourceMappingURL=estilos.css.map */
